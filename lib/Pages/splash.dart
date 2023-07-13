@@ -1,6 +1,7 @@
 import 'package:dell/Constants/appImages.dart';
 import 'package:dell/Constants/appTheme.dart';
 import 'package:dell/Pages/login.dart';
+import 'package:dell/Pages/register.dart';
 import 'package:dell/Widgets/splashWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -70,7 +71,13 @@ class _splashState extends State<splash> {
                     elevation: MaterialStateProperty.all(5),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => register(),
+                      ));
+                },
                 child: const Text(
                   "Register",
                   style: TextStyle(

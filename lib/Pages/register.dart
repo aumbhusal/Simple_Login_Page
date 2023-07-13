@@ -26,9 +26,12 @@ class _registerState extends State<register> {
                 const SizedBox(
                   height: 20,
                 ),
-                Text(
-                  appString.registerPage,
-                  style: Theme.of(context).textTheme.headlineLarge,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    appString.registerPage,
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(5.0),
