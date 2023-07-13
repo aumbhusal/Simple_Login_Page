@@ -1,3 +1,4 @@
+import 'package:dell/Pages/forgetpass.dart';
 import 'package:dell/Pages/login.dart';
 import 'package:dell/Pages/register.dart';
 import 'package:dell/Pages/splash.dart';

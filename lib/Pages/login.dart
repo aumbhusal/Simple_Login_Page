@@ -2,6 +2,7 @@ import 'package:dell/Constants/appImages.dart';
 import 'package:dell/Constants/appString.dart';
 import 'package:dell/Constants/appText.dart';
 import 'package:dell/Constants/appTheme.dart';
+import 'package:dell/Pages/forgetpass.dart';
 import 'package:dell/Pages/register.dart';
 import 'package:flutter/material.dart';
 
@@ -98,7 +99,12 @@ class _loginState extends State<login> {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => forgetpass()));
+                    },
                     child: const Text(
                       "Forget Password?",
                       style: TextStyle(letterSpacing: 0.7, fontSize: 14),
@@ -255,7 +261,11 @@ class _loginState extends State<login> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const register(),));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const register(),
+                              ));
                         },
                         child: Text(
                           appString.register,
