@@ -75,7 +75,7 @@ class _splashState extends State<splash> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => register(),
+                        builder: (context) => const register(),
                       ));
                 },
                 child: const Text(
