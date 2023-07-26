@@ -1,4 +1,4 @@
-# Simpel Login Page 
+# Simple Login Page 
 
 A new Flutter project.
 
